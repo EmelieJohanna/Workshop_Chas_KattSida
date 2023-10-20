@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.fa-solid {
+  display: none;
+}
+
+.lilNav {
+  display: none;
+  width: 150px;
+  height: 100px;
+  color: white;
+  position: absolute;
+  background-color: hotpink;
+  opacity: 0.9;
+  transform: translate(60px, 40px);
+  transition: 1s all;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.lilNav a {
+  color: white;
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #747474;
+}
+
+.button:active {
+  background-color: #3c3c3c;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+}
+
+.section {
+  padding: 40px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.section1 img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section1 h2 {
+  font-size: 2.5rem;
+}
+
+.catGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.catGrid img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.7s ease-in-out;
+}
+
+.catGrid img:hover {
+  transform: rotate(360deg);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .fa-solid {
+    font-size: 2rem;
+    display: flex;
+  }
+
+  .fa-solid:hover {
+    cursor: pointer;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  .fa-solid:hover + .lilNav {
+    transform: translate(-100px, 10px);
+    display: inline;
+    transition: 1s ease-in-out;
+  }
+
+  .lilNav a {
+    display: block;
+  }
+
+  main {
+    display: block;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .section img {
+    width: 100%;
+  }
+
+  .section1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .section1 img:hover {
+    opacity: 0.7;
+    border-radius: 300px;
+  }
+
+  .catGrid {
+    display: block;
+    width: 100%;
+  }
+
+  .catGrid img {
+    width: 100%;
+    height: auto;
+  }
+}
