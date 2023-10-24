@@ -25,7 +25,7 @@ nav a {
   margin: 0 20px;
 }
 
-.fa-solid {
+.burger {
   display: none;
 }
 
@@ -129,12 +129,12 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .fa-solid {
+  .burger {
     font-size: 2rem;
     display: flex;
   }
 
-  .fa-solid:hover {
+  .burger:hover {
     cursor: pointer;
   }
 
@@ -142,7 +142,7 @@ footer {
     display: none;
   }
 
-  .fa-solid:hover + .lilNav {
+  .burger:hover + .lilNav {
     transform: translate(-100px, 20px);
     display: inline;
     transition: 1s ease-in-out;
