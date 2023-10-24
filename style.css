@@ -74,7 +74,7 @@ main {
 .container {
   display: flex;
   flex-direction: column;
-  width: 900px;
+  width: 100%;
 }
 
 .section {
@@ -99,6 +99,10 @@ main {
 
 .section1 h2 {
   font-size: 2.5rem;
+}
+
+.section2 img {
+  width: 100%;
 }
 
 .catGrid {
